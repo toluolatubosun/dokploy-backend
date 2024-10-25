@@ -13,7 +13,7 @@ COPY --chown=node:node . .
 
 ENV NODE_ENV=production
 
-RUN yarn build
+RUN yarn add typescript && yarn build
 
 EXPOSE 4000
 
